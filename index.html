@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Empresa de Empréstimos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>EmprestaFácil</h1>
+    <p>Soluções rápidas de crédito pessoal</p>
+  </header>
+
+  <main>
+    <section id="solicitar">
+      <h2>Solicite seu empréstimo</h2>
+      <form id="emprestimoForm">
+        <label>Nome completo:
+          <input type="text" name="nome" required />
+        </label>
+        <label>CPF:
+          <input type="text" name="cpf" required />
+        </label>
+        <label>Valor desejado:
+          <input type="number" name="valor" required />
+        </label>
+        <label>Email:
+          <input type="email" name="email" required />
+        </label>
+        <label>Telefone:
+          <input type="tel" name="telefone" required />
+        </label>
+        <button type="submit">Enviar solicitação</button>
+      </form>
+      <p id="mensagemForm"></p>
+    </section>
+
+    <section id="pagamento">
+      <h2>Pagamento de Taxa</h2>
+      <p>Para liberar seu empréstimo, é necessário pagar uma taxa de liberação (simulação).</p>
+      <button onclick="gerarPagamento()">Gerar pagamento</button>
+      <div id="areaPagamento"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EmprestaFácil. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
